@@ -1,0 +1,10 @@
+/src/apps/bin/Debug/*
+/src/apps/obj/Debug/*
+/src/apps/obj/*
+/src/libs/MeterReading.Api.Core/bin/*
+/src/libs/MeterReading.Api.Core/obj/*
+/src/libs/MeterReading.Api.Datastore/obj/Debug/*
+/src/solutions/.vs/MeterReading/*
+/src/libs/MeterReading.Api.Datastore/obj/*
+/src/tests/Meterreading.Api.Tests/obj/*
+/src/libs/MeterReading.Api.Datastore/bin/*
