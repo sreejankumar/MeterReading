@@ -8,3 +8,4 @@
 /src/libs/MeterReading.Api.Datastore/obj/*
 /src/tests/Meterreading.Api.Tests/obj/*
 /src/libs/MeterReading.Api.Datastore/bin/*
+/src/solutions/MeterReading.Api.Tests/obj/*

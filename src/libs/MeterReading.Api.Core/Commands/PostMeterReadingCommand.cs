@@ -1,18 +1,32 @@
 ﻿using Api.Core.Commands;
-using MeterReading.Api.Core.Dtos;
+using MeterReading.Api.Core.Data.Dtos;
+using MeterReading.Api.Core.Data.Services;
 
 namespace MeterReading.Api.Core.Commands
 {
-    public class PostMeterReadingCommand : Command<RequestObject, object>
+    public class PostMeterReadingCommand : Command<RequestObject, MeterReadingUploadResult>
     {
-        public override Task<object> Run(RequestObject input)
+
+        private readonly IMeterReadingService _meterReadingService;
+
+        public PostMeterReadingCommand(IMeterReadingService meterReadingService)
         {
-            throw new NotImplementedException();
+            _meterReadingService = meterReadingService;
         }
 
-        public override Task Validate(RequestObject input)
+        public override async Task<MeterReadingUploadResult> Run(RequestObject input)
         {
-            throw new NotImplementedException();
+            var failureCount = await _meterReadingService.SubmitMeterReading(input.Readings.ValidRows);
+
+            return new MeterReadingUploadResult
+            {
+                FailureCount = input.Readings.Errors.Count + failureCount,
+                SuccessCount = input.Readings.ValidRows.Count - failureCount
+            };
+        }
+        public override async Task Validate(RequestObject input)
+        {
+            await input.Validate();
         }
     }
 }
