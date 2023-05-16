@@ -6,17 +6,18 @@ USE `meter-reading`;
 
 
 CREATE TABLE Accounts (
-AccountId BIGINT,
+AccountId int,
 FirstName  varchar(25),
 LastName varchar(25)
 );
 
 
-CREATE TABLE Reading (
-    ReadingId BIGINT NOT NULL ,
-    Reading BIGINT  NOT NULL ,
-    AccountId BIGINT  NOT NULL , 
-    SubmissionDataTime DATETIME  NOT NULL  
+CREATE TABLE MeterReading (
+    ReadingId int NOT NULL AUTO_INCREMENT,
+    MeterReadValue int NOT NULL,
+    AccountId int NOT NULL, 
+    MeterReadingDateTime DATETIME NOT NULL,
+    PRIMARY KEY (ReadingId)  
 );
 
 

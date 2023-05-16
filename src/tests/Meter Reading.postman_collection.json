@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "e67631ae-c3c3-4ab8-8765-39944b3ff60c",
+		"name": "Meter Reading",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6089384"
+	},
+	"item": [
+		{
+			"name": "Original CSV",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "text/csv",
+							"type": "file",
+							"src": "/C:/Development/Personal leraning/MeterReading/src/tests/CSV/Meter_Reading- Original.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7279/api/MeterReading",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7279",
+					"path": [
+						"api",
+						"MeterReading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Account Numbers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "text/csv",
+							"type": "file",
+							"src": "/C:/Development/Personal leraning/MeterReading/src/tests/CSV/Meter_Reading - Invalid Account Numbers.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7279/api/MeterReading",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7279",
+					"path": [
+						"api",
+						"MeterReading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid DateTime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "text/csv",
+							"type": "file",
+							"src": "/C:/Development/Personal leraning/MeterReading/src/tests/CSV/Meter_Reading - Invalid Data Time.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7279/api/MeterReading",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7279",
+					"path": [
+						"api",
+						"MeterReading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Meter Reading",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "text/csv",
+							"type": "file",
+							"src": "/C:/Development/Personal leraning/MeterReading/src/tests/CSV/Meter_Reading - Invalid Meter Reading.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7279/api/MeterReading",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7279",
+					"path": [
+						"api",
+						"MeterReading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Mulitple Reading",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "text/csv",
+							"type": "file",
+							"src": "/C:/Development/Personal leraning/MeterReading/src/tests/CSV/Meter_Reading - Invalid Muliple Reading.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7279/api/MeterReading",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7279",
+					"path": [
+						"api",
+						"MeterReading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Valid Mulitple Reading",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "text/csv",
+							"type": "file",
+							"src": "/C:/Development/Personal leraning/MeterReading/src/tests/CSV/Meter_Reading - Valid Muliple Reading.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7279/api/MeterReading",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7279",
+					"path": [
+						"api",
+						"MeterReading"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,4 +1,4 @@
-﻿namespace MeterReading.Api.Core.Dtos
+﻿namespace MeterReading.Api.Core.Data.Dtos
 {
     public class ErrorMessage
     {
